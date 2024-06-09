@@ -1,0 +1,272 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+	font-family: "Merriweather", Arial, sans-serif;
+	line-height: 1.1;
+}
+
+.button {
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 18px 20px 18px 20px;
+	text-decoration: none;
+	color: #1F1F1F;
+	margin-bottom: 14px;
+	display: block;
+	max-width: 335px;
+	width: 335px;
+	text-align: center;
+	border-radius: 66px;
+	font-weight: 500;
+}
+
+.ticker {
+	box-sizing: border-box;
+	font-size: 16px;
+	color: #FFFFFF;
+	background-color: #F54932;
+	height: 38px;
+	padding: 10px 12px;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-family: "Merriweather", Arial, sans-serif;
+	position: absolute;
+
+}
+
+.page__body {
+	width: 100%;
+	margin: 0;
+	font-family: "Golos Text", Arial, sans-serif;
+	color: #313131;
+}
+
+.main-header {
+	width: 100%;
+	background-color: #E9DED4;
+	min-width: 375px;
+}
+
+.main-header::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-image: url("./images/main-covering.png");
+	opacity: 0.2;
+	min-width: 375px;
+	max-height: 820px;
+}
+
+.main-header__wrapper {
+	box-sizing: border-box;
+	padding: 18px;
+	width: 375px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+}
+
+.main-header__logo-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.main-header__logo-text {
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	color: #595653;
+	font-size: 14px;
+}
+
+.preview {
+	width: 100%;
+	background-color: #E9DED4;
+	position: relative;
+	background-image: url("./images/chess-town.png");
+	background-repeat: no-repeat;
+	background-position: bottom 20px left 75%;
+	min-width: 375px;
+}
+
+.preview__wrapper {
+	box-sizing: border-box;
+	width: 375px;
+	margin: 0 auto;
+	padding: 32px 20px 20px 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.preview__title {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+.preview__title-upper {
+	display: block;
+	text-align: start;
+}
+
+.preview__title-lower {
+	display: block;
+	text-align: center;
+}
+
+.preview__text {
+	font-size: 18px;
+	line-height: 1.3;
+	margin-top: 0;
+	margin-bottom: 32px;
+}
+
+.preview__button:last-of-type {
+	margin-bottom: 291px;
+}
+
+.button--white {
+	background-color: #FFFFFF;
+	color: #1F1F1F;
+}
+
+.button--black {
+	background-color: #1F1F1F;
+	color: #FFFFFF;
+}
+
+.preview__ticker {
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.activities {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.activities__wrapper {
+	box-sizing: border-box;
+	width: 375px;
+	margin: 0 auto;
+	padding: 48px 20px 120px;
+}
+
+.activities__text {
+	font-family: "Merriweather", Arial, sans-serif;
+	font-size: 28px;
+	line-height: 1.35;
+	font-weight: 400px;
+	text-transform: uppercase;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.activities__image {
+	display: block;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.activities__image--tournament {
+	border-radius: 50%;
+}
+
+.activities__text--important {
+	color: #F54932;
+}
+
+.activities__image--chess-man {
+	margin-top: 34px;
+	margin-left: -20px;
+	margin-bottom: 24px;
+}
+
+.activities__event-info {
+	margin-top: 44px;
+}
+
+.activities__event-info tbody {
+	display: grid;
+	grid-template-columns: 335px;
+}
+
+.activities__event-info tr {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px 0;
+	gap: 12px;
+}
+
+.activities__event-info th {
+	font-size: 20px;
+	font-weight: 400;
+	color: #313131;
+}
+
+.activities__event-info td {
+	font-size: 20px;
+	font-weight: 600;		
+	color: #313131;
+}
+
+.activities__event-info tr:not(:last-of-type) {
+	border-bottom: 2px solid #D0D0D0;
+}
+
+.activities__deleted {
+	text-decoration: line-through #ff0000;
+}
+
+.activities__link {
+	text-decoration: none;
+	color: #3057A2;
+	font-size: 18px;
+	line-height: 1.2;
+	margin-top: 24px;
+	display: block;
+}
+
+.steps {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.steps__wrapper {
+	box-sizing: border-box;
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.steps__title {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1.1;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+.steps__link {
+	font-size: 18px;
+	text-decoration: none;
+	color: #3057A2;
+	margin-bottom: 20px;
+	display: block;
+}

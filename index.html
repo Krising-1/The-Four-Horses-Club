@@ -6,71 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..700&family=Merriweather&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
  </head>
  <body class="page__body">
   <header class="main-header">
-    <img class="main-header__logo-image" src="">
-    <p class="main-header__logo-text">Клуб четырех коней</p>
+    <div class="main-header__wrapper">
+      <div class="main-header__logo-wrapper">
+        <img class="main-header__logo-image" src="./images/the-four-horses-club-logo.svg" width="80px" height="27px">
+        <p class="main-header__logo-text">Клуб<br> четырех коней</p>
+      </div>
+    </div>
   </header>
   <main class="main-page">
     <section class="preview">
-      <h1 class="preview__title title">
-        <span class="preview__title-upper">Превратите уездный город</span>
-        <span class="preview__title-lower">в столицу земного шара</span>
-      </h1>
-      <p class="preview__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-      <a class="preview__button button button--white" href="#">Поддержать шахматную мысль</a>
-      <a class="preview__button button button--black" href="#">Подробнее о турнире</a>
-      <marquee class="preview__ticker ticker" direction="right" scrollamount="5">Дело помощи утопающим — дело рук самих утопающих!</marquee>
+      <div class="preview__wrapper">
+        <h1 class="preview__title title">
+          <span class="preview__title-upper">Превратите уездный город</span>
+          <span class="preview__title-lower">в столицу земного шара</span>
+        </h1>
+        <p class="preview__text">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+        <a class="preview__button button button--black" href="#">Поддержать шахматную мысль</a>
+        <a class="preview__button button button--white" href="#">Подробнее о турнире</a>
+      </div>
+      <marquee class="preview__ticker ticker" direction="right" scrollamount="5"> Дело помощи утопающим — дело рук самих утопающих! • Шахматы двигают вперед не только культуру, но и экономику! • Лед тронулся, господа присяжные заседатели! • </marquee>
     </section>
     <section class="activities">
-      <h2 class="visually-hidden">Поддержите Васюкинский турнир!</h2>
-      <p class="activities__text">Чтобы поддержать Международный васюкинский турнир</p>
-      <img class="activities__image" src="./images/vasyukinsky-tournament.jpg" width="335" height="213" alt="Шахматисты играют в шахматы.">
-      <p class="activities__text">посетите лекцию на тему: <strong class="activities__text activities__text--important">«Плодотворная дебютная идея»</strong></p>
-      <img class="activities__image" src="./images/man-playing-chess.png" width="335" height="402" alt="Мужчина играет в Шахматы.">
-      <p>и Сеанс <strong class="activities__text activities__text--important">одновременной игры в шахматы на 160 досках</strong> гроссмейстера О. Бендера</p>
-      <table class="activities__event-info">
-        <tr>
-          <td>Место проведения:</td>
-          <td>Клуб «Картонажник»</td>
-        </tr>
-        <tr>
-          <td>Дата и время мероприятия:</td>
-          <td><time datetime="1927-06-22 18:00">22 июня 1927 г. в 18:00</time></td>
-        </tr>
-        <tr>
-          <td>Стоимость входных билетов:</td>
-          <td>20 коп.</td>
-        </tr>
-        <tr>
-          <td>Плата за игру:</td>
-          <td>50 коп.</td>
-        </tr>
-        <tr>
-          <td>Взнос на телеграммы:</td>
-          <td><del>100 руб.</del> 21 руб. 16 коп.</td>
-        </tr>
-      </table>
-      <a class="activities__link" href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
+      <div class="activities__wrapper">
+        <h2 class="visually-hidden">Поддержите Васюкинский турнир!</h2>
+        <p class="activities__text">Чтобы поддержать Международный васюкинский турнир</p>
+        <img class="activities__image activities__image--tournament" src="./images/vasyukinsky-tournament.jpg" width="335" height="213" alt="Шахматисты играют в шахматы.">
+        <p class="activities__text">посетите лекцию на тему: <strong class="activities__text activities__text--important">«Плодотворная дебютная идея»</strong></p>
+        <img class="activities__image activities__image--chess-man" src="./images/man-playing-chess.png" width="375" height="420" alt="Мужчина играет в Шахматы.">
+        <p class="activities__text">и Сеанс <strong class="activities__text activities__text--important">одновременной игры в шахматы на 160 досках</strong> гроссмейстера<br>О. Бендера</p>
+        <table class="activities__event-info">
+          <caption class="visually-hidden">Информация о мероприятии</caption>
+          <tr>
+            <th>Место проведения:</th>
+            <td>Клуб «Картонажник»</td>
+          </tr>
+          <tr>
+            <th>Дата и время мероприятия:</th>
+            <td><time datetime="1927-06-22 18:00">22 июня 1927 г. в 18:00</time></td>
+          </tr>
+          <tr>
+            <th>Стоимость входных билетов:</th>
+            <td>20 коп.</td>
+          </tr>
+          <tr>
+            <th>Плата за игру:</th>
+            <td>50 коп.</td>
+          </tr>
+          <tr>
+            <th>Взнос на телеграммы:</th>
+            <td><del class="activities__deleted">100 руб.</del> 21 руб. 16 коп.</td>
+          </tr>
+        </table>
+        <a class="activities__link " href="#">По всем вопросам обращаться в администрацию к К. Михельсону</a>
+      </div>
     </section>
     <section class="steps">
-      <h2 class="steps__title">Этапы преображения Васюков</h2>
-      <a class="steps__link" href="#">Будущие источники обогащения васюкинцев</a>
-      <ol class="steps__list">
-        <li class="steps__list-item">Строительство железнодорожной магистрали Москва-Васюки</li>
-        <li class="steps__list-item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
-        <li class="steps__list-item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
-        <li class="steps__list-item">Строительство дворца для турнира</li>
-        <li class="steps__list-item">Размещение гаражей для гостевого автотранспорта</li>
-        <li class="steps__list-item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
-        <li class="steps__list-item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
-      </ol>
-      <div class="steps__button-wrapper">
-        <button class="steps__button button button--left" type="button" name="toggle-left"><span class="visually-hidden">Переключить на следующий этап.</span></button>
-        <button class="steps__button button button--right" type="button" name="toggle-right"><span class="visually-hidden">Переключить на предыдущий этап.</span></button>
+      <div class="steps__wrapper">
+        <h2 class="steps__title title">Этапы преображения Васюков</h2>
+        <a class="steps__link" href="#">Будущие источники обогащения васюкинцев</a>
+        <ol class="steps__list">
+          <li class="steps__list-item">Строительство железнодорожной магистрали Москва-Васюки</li>
+          <li class="steps__list-item">Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</li>
+          <li class="steps__list-item">Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</li>
+          <li class="steps__list-item">Строительство дворца для турнира</li>
+          <li class="steps__list-item">Размещение гаражей для гостевого автотранспорта</li>
+          <li class="steps__list-item">Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</li>
+          <li class="steps__list-item">Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</li>
+        </ol>
+        <div class="steps__button-wrapper">
+          <button class="steps__button button button--left" type="button" name="toggle-left"><span class="visually-hidden">Переключить на следующий этап.</span></button>
+          <button class="steps__button button button--right" type="button" name="toggle-right"><span class="visually-hidden">Переключить на предыдущий этап.</span></button>
+        </div>
       </div>
     </section>
     <section class="participants">
